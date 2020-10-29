@@ -1,0 +1,199 @@
+.youlogo {
+  padding-right: 0.5rem;
+  height: 3rem;
+  width: 4rem;
+}
+
+.textcolo {
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.textcolo:hover,
+.textcolo:visited,
+.textcolo:link,
+.textcolo:active {
+  text-decoration: none;
+  color: white;
+}
+.mainsection {
+  margin: 1rem;
+  padding: 1rem;
+
+  .thumbnail {
+    padding-left: 0.5rem;
+  }
+}
+
+#vid-gal {
+  .vid-heading {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption {
+    color: black;
+    pointer-events: none;
+  }
+}
+#insta-body,
+#insta-html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/img/gaston-abascal-8F-6pXyQyLU-unsplash.jpg");
+
+  /* Half height */
+  height: 225%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-main {
+  margin-top: 0px;
+  border: 0;
+}
+.insta-h1 {
+  font-size: 3rem;
+  width: 700px;
+  margin: auto;
+
+  padding-top: 3%;
+}
+.container {
+  padding-top: 3rem;
+  width: 70%;
+}
+#zoom-hov:hover {
+  transform: scale(1.3);
+}
+#zoom-hov {
+  padding-top: 23px;
+}
+#zoom-hov-link:hover {
+  transform: scale(1.3);
+}
+.link-col:hover,
+.link-col {
+  color: white;
+  text-decoration: none;
+}
+
+/*subscribe*/
+
+#panel,
+#flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+#sub-page {
+  border: 0;
+}
+
+.container .buy {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(212, 0, 0);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+.ads {
+  padding-top: 7rem;
+  height: 394px;
+  width: 306px;
+}
+.ads-hide {
+  display: none;
+  opacity: 0;
+  margin-left: 120px;
+  padding-top: 7rem;
+  height: 394px;
+  width: 306px;
+}
+
+//gallery style..................
+.gal-sec {
+  .gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  display: none;
+  opacity: 0;
+}
+
+// rating 1
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
