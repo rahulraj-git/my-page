@@ -24,6 +24,7 @@
 .mainsection {
   margin: 1rem;
   padding: 1rem;
+  background-color: lightblue;
 }
 
 .mainsection .thumbnail {
@@ -47,7 +48,7 @@
 
 .bg {
   /* The image used */
-  background-image: url("/my-page/img/gaston-abascal-8F-6pXyQyLU-unsplash.jpg");
+  background-image: url(" /img/gaston-abascal-8F-6pXyQyLU-unsplash.jpg");
   /* Half height */
   height: 225%;
   /* Center and scale the image nicely */
@@ -190,7 +191,7 @@
   white-space: nowrap;
   cursor: pointer;
   font-size: 30px;
-  color: #ccc;
+  color: white;
 }
 
 .rate:not(:checked) > label:before {
@@ -212,5 +213,44 @@
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+#main-sec {
+  margin-top: 0;
+  padding-top: 7em;
+}
+
+#main-sec h3 {
+  color: bisque;
+}
+
+#service-sec {
+  background-color: darkgray;
+}
+
+.bg-img {
+  width: 100%;
+  padding: 10% 0;
+  background-size: cover;
+  background-position: center;
+  border: solid;
+  opacity: 0.5;
+}
+
+.hs {
+  position: relative;
+  right: -100%;
+  min-width: 220px;
+  width: 270;
+  height: 33px;
+  z-index: 10;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  -ms-transition: 1s ease;
+}
+
+.hs.show {
+  right: -10px;
 }
 /*# sourceMappingURL=main.css.map */

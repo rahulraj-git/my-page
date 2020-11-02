@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Tech Taiks by RJ</title>
-    <link rel="icon" href="/my-page/img/logo.png" />
+    <link rel="icon" href="/img/logo.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -11,7 +11,7 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/my-page/dist/css/main.css" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,9 +19,10 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-secondary">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -61,39 +62,51 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <button id="sub-page" class="nav-item bg-info nav-link">
-              <a class="nav-item nav-link" href="/my-page/index.html">HOME </a>
+              <a class="nav-item nav-link" href="/index.html">HOME </a>
             </button>
             <button
               onclick="myFunction()"
               id="sub-page"
               class="nav-item bg-info nav-link"
-              href="/my-page/subscribe.html"
+              href=" /subscribe.html"
             >
-              <a class="nav-item nav-link" href="/my-page/subscribe.html"
-                >SUBSCRIBE</a
-              >
+              <a class="nav-item nav-link" href="/subscribe.html">SUBSCRIBE</a>
             </button>
             <button id="sub-page" class="nav-item bg-info nav-link">
-              <a class="nav-item nav-link" href="/my-page/videos.html"
-                >VIDEOS</a
-              >
+              <a class="nav-item nav-link" href="/videos.html">VIDEOS</a>
             </button>
             <button id="sub-page" class="nav-item bg-info nav-link">
-              <a class="nav-item nav-link" href="/my-page/insta.html"
-                >INSTAGRAM LINK</a
-              >
+              <a class="nav-item nav-link" href="/insta.html">INSTAGRAM LINK</a>
             </button>
             <button id="sub-page" class="nav-item bg-info nav-link">
-              <a class="nav-item nav-link" href="/my-page/about.html">ABOUT</a>
+              <a class="nav-item nav-link" href="/about.html">ABOUT</a>
             </button>
           </div>
         </div>
       </nav>
     </section>
 
+    <!--background changing section-->
+
+    <section class="bg-dark">
+      <div class="row align-items-center">
+        <div
+          class="col-md-12 bg-img"
+          style="
+            background-image: url('https://image.shutterstock.com/image-vector/abstract-lines-dots-connect-background-260nw-1492332182.jpg');
+          "
+        >
+          <h1 class="text-warning text-center">Hi..</h1>
+          <h1 class="text-white text-center">
+            Welcome to<span class="text-danger"> tech talks by RJ</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
     <!--home section-->
 
-    <section class="bg-light mainsection">
+    <section class="mainsection">
       <!--video 1-->
 
       <div class="row align-items-center my-5 thumbrow">
@@ -122,9 +135,11 @@
             giant is also offering a 5 percent instant discount to HSBC cashback
             card users.
           </p>
-          <a class="btn btn-primary" href="https://youtu.be/BsZH5jqurr8"
-            >Youtube Link</a
-          >
+          <div class="hs">
+            <a class="btn btn-primary" href="https://youtu.be/BsZH5jqurr8"
+              >Youtube Link</a
+            >
+          </div>
           <div class="rate">
             <input
               type="radio"
@@ -195,9 +210,11 @@
             Gen) processor, coupled with 8 GB of RAM and has 512 GB SSD storage
             at this price point.
           </p>
-          <a class="btn btn-primary" href="https://youtu.be/sv-WYweCUuk"
-            >Youtube Link</a
-          >
+          <div class="hs">
+            <a class="btn btn-primary" href="https://youtu.be/sv-WYweCUuk"
+              >Youtube Link</a
+            >
+          </div>
           <div class="rate">
             <input
               type="radio"
@@ -242,8 +259,126 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <!--video 3-->
+    <!--section 2-->
+
+    <section class="p-5 m-4 rounded" id="service-sec">
+      <div class="container">
+        <h3 class="text-center text-light">SERVICES</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="p-3 card col-md-12">
+              <video height="200rem" controls>
+                <source
+                  src="/my-portfolio1/videos/hareeshaudio.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">VIDEO CREATOR</h5>
+                <p class="card-text">
+                  this is a mobile videography taken by myself using the great
+                  camera of Xiaomi redmi k20 pro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 card col-md-12">
+              <iframe
+                class="col-md-12"
+                width="300rem"
+                height="200rem"
+                src="https://www.youtube.com/embed/sv-WYweCUuk"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <div class="card-body">
+                <h5 class="card-title">PRODUCT REVIEWER</h5>
+                <p class="card-text">
+                  laptop : Asus VivoBook Gaming Core i5 8th Gen - (8 GB/512 GB
+                  SSD/Windows 10 Home)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 card col-md-12">
+              <iframe
+                class="col-md-12"
+                width="300rem"
+                height="200rem"
+                src="https://www.youtube.com/embed/OE3guDDpC2Y"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">TECHNOLOGY SPEAKER</h5>
+                <p class="card-text">
+                  In this video I am going to show how to access darknet in
+                  mobile and the information regarding the dark net
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact me section-->
+
+    <section id="contact-me">
+      <div class="container">
+        <h3 class="p-3 text-light text-center">contact me</h3>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label>phone</label>
+                  <input type="tel" class="form-control" placeholder="phone" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" />
+                </div>
+
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Contact</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <script>
       $("#tech-head").mouseenter(function () {
@@ -262,6 +397,26 @@
           "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400"
         );
       }
+      var images = new Array(
+        "https://image.shutterstock.com/image-vector/abstract-lines-dots-connect-background-260nw-1492332182.jpg",
+        "https://image.shutterstock.com/image-photo/businessman-on-blurred-background-using-260nw-1199235616.jpg",
+        "https://s27389.pcdn.co/wp-content/uploads/2019/10/retail-innovation-changing-tech-consumer-employee-demands-1024x440.jpeg",
+        "https://cache.techmahindra.com/static/img/hi-tech-enterprise-smart-assistant.jpg"
+      );
+
+      var slider = setInterval(function () {
+        document.getElementsByClassName("bg-img")[0].setAttribute(
+          "style",
+
+          'background-image: url("' + images[0] + '")'
+        );
+        images.splice(images.length, 0, images[0]);
+        images.splice(0, 1);
+      }, 3000);
+      //button moving
+      $(document).ready(function () {
+        $(".hs").addClass("show");
+      });
     </script>
   </body>
 </html>
